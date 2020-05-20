@@ -76,7 +76,8 @@ stages:
       (
         succeeded(),
         eq(variables['Build.SourceBranchName'], variables['releasebranchname'])
-      )    pool:
+      )
+    pool:
       vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
